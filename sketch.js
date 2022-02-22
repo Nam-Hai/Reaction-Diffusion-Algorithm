@@ -29,14 +29,20 @@ function setup() {
     }
   }
 
-  for (let i = 100; i < 110; i++) {
-    for (let j = 100; j < 110; j++) {
-      grid[i][j].b = 1;
-    }
-  }
+  // for (let i = 100; i < 110; i++) {
+  //   for (let j = 100; j < 110; j++) {
+  //     grid[i][j].b = 1;
+  //   }
+  // }
 
-  for (let i = 30; i < 38; i++) {
-    for (let j = 59; j < 69; j++) {
+  // for (let i = 30; i < 38; i++) {
+  //   for (let j = 59; j < 69; j++) {
+  //     grid[i][j].b = 1;
+  //   }
+  // }
+
+  for (let i = 0; i < 100; i++) {
+    for (let j = 0; j < 200; j++) {
       grid[i][j].b = 1;
     }
   }
