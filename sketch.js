@@ -35,6 +35,11 @@ function setup() {
     }
   }
 
+  for (let i = 30; i < 38; i++) {
+    for (let j = 59; j < 69; j++) {
+      grid[i][j].b = 1;
+    }
+  }
 
 }
 
@@ -58,8 +63,8 @@ function draw() {
     for (let y = 0; y < height; y++) {
       let pix = (x + y * width) * 4;
       pixels[pix + 0] = floor(next[x][y].a * 255);
-      pixels[pix + 1] = 0;
-      pixels[pix + 2] = floor(next[x][y].b * 255);
+      pixels[pix + 1] = floor(next[x][y].a * 255);
+      pixels[pix + 2] = floor(next[x][y].a * 255);
       pixels[pix + 3] = 255;
     }
   }
